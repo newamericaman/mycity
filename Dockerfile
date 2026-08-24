@@ -20,7 +20,7 @@ RUN apk add --no-cache \
 
 # دانلود و نصب باینری رسمی 3x-ui v3.6.0
 # (این فایل شامل xray و geoip/geosite هم هست — همه‌چیز داخل خودشه)
-ARG XUI_VERSION=v3.6.0
+ARG XUI_VERSION=v3.7.0
 RUN curl -L "https://github.com/MHSanaei/3x-ui/releases/download/${XUI_VERSION}/x-ui-linux-amd64.tar.gz" -o /tmp/x-ui.tar.gz \
     && tar -xzf /tmp/x-ui.tar.gz -C /usr/local/ \
     && rm /tmp/x-ui.tar.gz \
